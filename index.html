@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chess For Kids — Open Registration 2026</title>
+<meta name="description" content="Small-group chess classes for kids in Klebang, Buntong and Ipoh Garden. Max 10 students per class, 17 years of coaching experience.">
+<meta property="og:title" content="Chess For Kids — Open Registration 2026">
+<meta property="og:description" content="Small-group chess classes in Ipoh and Chemor. Max 10 students per class.">
+<meta property="og:image" content="cfk-logo.jpg">
+<link rel="icon" href="cfk-logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+:root{
+  --cream:#FBFAF0; --sand:#F2ECD9; --line:#EADFC8;
+  --ink:#2E1A0C; --muted:#5C3D22; --brown:#3A2210; --brown-2:#4E2F17; --deep:#2A180A;
+  --caramel:#7A4210; --lime:#8FD12E; --on-dark:#EADFC8;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.5}
+h1,h2,h3{font-family:'Fredoka','Nunito',system-ui,sans-serif;margin:0}
+img{max-width:100%;height:auto}
+a{color:var(--caramel)} a:hover{color:var(--brown)}
+a:focus-visible{outline:3px solid var(--caramel);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.section{padding:80px 0}
+.dark{background:var(--brown);color:var(--cream)}
+.sand{background:var(--sand)}
+.eyebrow{display:block;color:var(--caramel);font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.dark .eyebrow{color:var(--lime)}
+.h2{font-size:clamp(30px,4vw,44px);line-height:1.1;max-width:680px;margin-bottom:32px}
+.lead{font-size:18px;line-height:1.6;color:var(--muted)}
+.grid{display:grid;gap:18px}
+.g-240{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g-300{grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))}
+.g-320{grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr))}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 26px;border-radius:999px;font-weight:800;font-size:17px;text-decoration:none;border:2px solid var(--ink);color:var(--ink);background:transparent}
+.btn:hover{color:var(--ink)}
+.btn-lime{background:var(--lime)}
+.btn-pop{box-shadow:0 4px 0 var(--ink)}
+.btn-pop:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+.dark .btn-light{border-color:var(--cream);color:var(--cream)}
+.btn-lime.no-border{border-color:var(--lime)}
+
+/* nav */
+header{position:sticky;top:0;z-index:10;background:var(--cream);border-bottom:2px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:10px 24px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand img{width:52px;height:46px;object-fit:contain}
+.brand span{font-family:'Fredoka',sans-serif;font-weight:700;font-size:20px}
+.nav nav{display:flex;flex-wrap:wrap;align-items:center;gap:20px;font-weight:700;font-size:15px}
+.nav nav a{text-decoration:none}
+.nav .btn{font-size:15px;padding:10px 20px}
+@media (max-width:640px){.nav nav .link{display:none}}
+
+/* hero */
+.hero{display:flex;flex-wrap:wrap;align-items:center;gap:48px;padding:64px 24px 72px}
+.hero-text{flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:22px}
+.pill{align-self:flex-start;background:var(--brown);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px;border-radius:999px}
+.hero h1{font-size:clamp(40px,6vw,68px);line-height:1.02;font-weight:700}
+.hero p{margin:0;font-size:19px;line-height:1.6;color:var(--muted);max-width:520px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.stats{display:flex;flex-wrap:wrap;gap:28px;padding-top:8px}
+.stats b{display:block;font-family:'Fredoka',sans-serif;font-weight:700;font-size:32px;color:var(--caramel)}
+.stats span{font-size:14px;color:var(--muted);font-weight:700}
+.hero-img{flex:1 1 360px;min-width:0;display:flex;justify-content:center}
+.hero-img img{width:100%;max-width:480px;border-radius:28px}
+
+/* signs */
+.sign{background:var(--brown-2);border-radius:20px;padding:24px}
+.sign b{display:block;font-family:'Fredoka',sans-serif;font-size:36px;color:var(--lime);margin-bottom:10px}
+.sign p{margin:0;font-size:18px;line-height:1.45;font-weight:700}
+.after{margin:32px 0 0;font-size:20px;font-weight:700}
+
+/* benefits */
+.benefit{display:flex;align-items:center;gap:14px;background:#fff;border:2px solid var(--line);border-radius:16px;padding:18px 20px;font-size:17px;font-weight:700}
+.tick{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:var(--lime);display:flex;align-items:center;justify-content:center}
+
+/* why */
+.why{display:flex;flex-wrap:wrap;gap:48px}
+.why-intro{flex:1 1 360px;min-width:0}
+.why-intro .h2{margin-bottom:16px}
+.why-list{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.why-item{display:flex;gap:16px;align-items:flex-start;background:var(--cream);border-radius:18px;padding:20px}
+.why-item svg{flex:0 0 auto}
+.why-item h3{font-size:20px;margin-bottom:4px}
+.why-item p{margin:0;color:var(--muted);line-height:1.5}
+
+/* cards */
+.card{background:#fff;border:2px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:16px}
+.card h3{font-size:26px}
+.card p{margin:0}
+.addr{line-height:1.5;color:var(--muted)}
+.time{background:var(--sand);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+.time small{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--caramel)}
+.time strong{font-size:17px}
+.time span{font-weight:700}
+.card .btn{margin-top:auto;font-size:16px}
+.card.premium{background:var(--brown);border-color:var(--brown);color:var(--cream)}
+.card.premium .addr{color:var(--on-dark)}
+.card.premium .time{background:var(--brown-2)}
+.card.premium .time small{color:var(--lime)}
+.tag{align-self:flex-start;background:var(--lime);color:var(--ink);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+
+/* fees */
+.fee{background:#fff;border:2px solid var(--ink);border-radius:24px;padding:30px;display:flex;flex-direction:column;gap:20px}
+.fee h3{font-size:26px;margin-bottom:6px}
+.fee .sub{margin:0;font-size:15px;color:var(--muted);font-weight:700}
+.price{display:flex;align-items:baseline;gap:6px}
+.price b{font-family:'Fredoka',sans-serif;font-weight:700;font-size:56px;line-height:1}
+.price span{font-size:17px;font-weight:700;color:var(--muted)}
+.rows{border-top:2px solid var(--line)}
+.row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:2px solid var(--line);font-weight:700}
+.fee .note{margin:0;font-size:15px;line-height:1.55;color:var(--muted)}
+.fee .note strong{color:var(--ink)}
+.fee.premium{background:var(--brown);border-color:var(--brown);color:var(--cream)}
+.fee.premium .sub{color:var(--lime);font-weight:800}
+.fee.premium .price span,.fee.premium .note{color:var(--on-dark)}
+.fee .btn{margin-top:auto;font-size:16px}
+
+/* steps */
+.step{background:#fff;border:2px solid var(--line);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.num{width:48px;height:48px;border-radius:50%;background:var(--lime);border:2px solid var(--ink);display:flex;align-items:center;justify-content:center;font-family:'Fredoka',sans-serif;font-weight:700;font-size:22px}
+.step h3{font-size:22px}
+.step p{margin:0;line-height:1.55;color:var(--muted)}
+.step .btn{align-self:flex-start;font-size:16px}
+.bank{background:var(--sand);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.bank small{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--caramel)}
+.acc{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.acc b{font-family:'Fredoka',sans-serif;font-size:26px;letter-spacing:.04em}
+.copy{font:inherit;font-size:14px;font-weight:800;min-height:40px;padding:8px 14px;border-radius:999px;border:2px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer}
+
+/* final */
+.final{max-width:860px;margin:0 auto;padding:80px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:22px}
+.final h2{font-size:clamp(32px,5vw,52px);line-height:1.08}
+.final p{margin:0;font-size:19px;color:var(--on-dark)}
+.final .ctas{justify-content:center}
+footer{background:var(--deep);color:#D9CBAE;padding-bottom:env(safe-area-inset-bottom,0px)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:28px 24px;font-size:14px;font-weight:600}
+
+/* floating WhatsApp on phones */
+.wa-float{display:none}
+@media (max-width:640px){
+  .section{padding:56px 0}
+  .hero{padding-top:40px}
+  .wa-float{display:flex;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;background:#25D366;color:#fff;border-radius:999px;padding:14px 18px;font-weight:800;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25);align-items:center;gap:8px}
+  .wa-float:hover{color:#fff}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav wrap" style="padding-left:24px;padding-right:24px">
+    <a class="brand" href="#top"><img src="cfk-logo.jpg" alt="Chess For Kids logo"><span>Chess For Kids</span></a>
+    <nav>
+      <a class="link" href="#benefits">Benefits</a>
+      <a class="link" href="#locations">Locations</a>
+      <a class="link" href="#fees">Fees</a>
+      <a class="btn btn-lime" href="https://forms.gle/cySXhSezJeB1M3JH9" target="_blank" rel="noopener">Register now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <span class="pill">Open registration · Chess classes 2026</span>
+      <h1>Trade screen time for thinking time.</h1>
+      <p>Small-group chess classes in Ipoh and Chemor for kids who need more focus, more patience and less phone. Max 10 students per session, taught by a coach with 17 years of experience.</p>
+      <div class="ctas">
+        <a class="btn btn-lime btn-pop" href="https://forms.gle/cySXhSezJeB1M3JH9" target="_blank" rel="noopener">Register your child</a>
+        <a class="btn" href="https://wa.me/60195727276" target="_blank" rel="noopener">WhatsApp 019-572 7276</a>
+      </div>
+      <div class="stats">
+        <div><b>17 yrs</b><span>coaching experience</span></div>
+        <div><b>Max 10</b><span>students per class</span></div>
+        <div><b>RM70</b><span>monthly, standard branches</span></div>
+      </div>
+    </div>
+    <div class="hero-img"><img src="cfk-logo.jpg" alt="Chess For Kids: a smiling brown knight above green lettering" width="1080" height="960"></div>
+  </section>
+
+  <section class="dark section">
+    <div class="wrap">
+      <span class="eyebrow">Calling all parents</span>
+      <h2 class="h2">Is your child showing any of these at home?</h2>
+      <div class="grid g-240">
+        <div class="sign"><b>01</b><p>Hooked on smartphones or games?</p></div>
+        <div class="sign"><b>02</b><p>Less active and energetic than before?</p></div>
+        <div class="sign"><b>03</b><p>Often bored and drifting into the wrong things?</p></div>
+        <div class="sign"><b>04</b><p>Struggling to focus?</p></div>
+      </div>
+      <p class="after">If any of these sound familiar, bring them to Chess For Kids.</p>
+    </div>
+  </section>
+
+  <section id="benefits" class="section">
+    <div class="wrap">
+      <span class="eyebrow">What chess builds</span>
+      <h2 class="h2">Nine habits your child takes off the board</h2>
+      <div class="grid g-300" id="benefit-list"></div>
+    </div>
+  </section>
+
+  <section class="sand section">
+    <div class="wrap why">
+      <div class="why-intro">
+        <span class="eyebrow">Why CFK</span>
+        <h2 class="h2">Step by step, level by level</h2>
+        <p class="lead">Structured, progressive modules mean your child learns one step at a time and moves up through the levels. Qualified players get exposure to external tournaments, representing the academy.</p>
+      </div>
+      <div class="why-list">
+        <div class="why-item">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7A4210" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><circle cx="17.5" cy="9" r="2.5"/><path d="M17 13.6c2.6.2 4.5 2.6 4.5 5.4"/></svg>
+          <div><h3>Private group classes</h3><p>Max 10 students per session, so the coach sees every board.</p></div>
+        </div>
+        <div class="why-item">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7A4210" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5L7 21l5-2.5 5 2.5-1.5-7.5"/></svg>
+          <div><h3>Experienced coaches</h3><p>17 years of teaching chess to kids.</p></div>
+        </div>
+        <div class="why-item">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7A4210" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"/><path d="M8 7h6M8 11h6"/></svg>
+          <div><h3>Systematic learning modules</h3><p>A complete syllabus from first moves upward, with theory sessions and advanced applications.</p></div>
+        </div>
+        <div class="why-item">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7A4210" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><h3>Affordable, with multiple class times</h3><p>Weekend mornings, weekday nights or Friday evenings across three branches.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="locations" class="section">
+    <div class="wrap">
+      <span class="eyebrow">Locations &amp; schedule</span>
+      <h2 class="h2">Pick the branch and time that fit your week</h2>
+      <div class="grid g-300">
+        <article class="card">
+          <h3>CFK Klebang</h3>
+          <p class="addr">5B, Laluan Klebang 21, Klebang Perdana, 31200 Chemor, Perak</p>
+          <div class="time"><small>Class times</small><strong>Saturday &amp; Sunday</strong><span>9:00 AM – 12:00 PM</span></div>
+          <p><strong>Contact:</strong> <a href="https://wa.me/60195727276" target="_blank" rel="noopener">019-572 7276</a></p>
+          <a class="btn" href="https://maps.app.goo.gl/kyhybzQyepfV4bjg7" target="_blank" rel="noopener">Open in Google Maps</a>
+        </article>
+        <article class="card">
+          <h3>CFK Buntong</h3>
+          <p class="addr">171, Persiaran Raja Mazwin Selatan, 30100 Ipoh, Perak</p>
+          <div class="time"><small>Class times</small><strong>Wednesday &amp; Saturday</strong><span>8:00 PM – 9:30 PM</span></div>
+          <p><strong>Contact:</strong> <a href="https://wa.me/60195727276" target="_blank" rel="noopener">019-572 7276</a></p>
+          <a class="btn" href="https://maps.app.goo.gl/zxzhqin2XbJVacnr8" target="_blank" rel="noopener">Open in Google Maps</a>
+        </article>
+        <article class="card premium">
+          <span class="tag">Premium branch</span>
+          <h3>CFK × Uplink, Ipoh Garden</h3>
+          <p class="addr">Uplink Workspace Solutions, 10A, Ipoh Garden Square, Ipoh Garden South. A managed coworking space with a front desk on duty, clean rooms and member-only access.</p>
+          <div class="time"><small>Class times</small><strong>Friday</strong><span>5:00 PM – 6:30 PM</span></div>
+          <a class="btn btn-lime no-border" href="https://wa.me/60195727276" target="_blank" rel="noopener">Ask about Uplink on WhatsApp</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="fees" class="sand section">
+    <div class="wrap">
+      <span class="eyebrow">CFK Academy fees</span>
+      <h2 class="h2">Clear fees, no surprises</h2>
+      <div class="grid g-320">
+        <div class="fee">
+          <div><h3>Standard branches</h3><p class="sub">Klebang · Buntong</p></div>
+          <div class="price"><b>RM70</b><span>/ month</span></div>
+          <div class="rows">
+            <div class="row"><span>Registration (one-time)</span><span>RM30</span></div>
+            <div class="row"><span>Membership</span><span>RM30</span></div>
+            <div class="row"><span>Book</span><span>RM10</span></div>
+          </div>
+          <p class="note"><strong>One-Price Policy:</strong> one monthly fee covers both Klebang and Buntong. Same modules, same coaches, so your child can attend whichever branch suits the week.</p>
+        </div>
+        <div class="fee premium">
+          <div><h3>Uplink Ipoh Garden</h3><p class="sub">Premium package</p></div>
+          <div class="price"><b>RM100</b><span>/ month</span></div>
+          <p class="note">Classes in a managed coworking space with front-desk staff, clean rooms and member-only access. Priced separately from the One-Price standard branches.</p>
+          <a class="btn btn-lime no-border" href="https://forms.gle/cySXhSezJeB1M3JH9" target="_blank" rel="noopener">Register for Uplink</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">How to register</span>
+      <h2 class="h2">Two steps and your child has a seat</h2>
+      <div class="grid g-300">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Fill in the registration form</h3>
+          <p>Takes a couple of minutes. Choose your branch and class time.</p>
+          <a class="btn btn-lime" href="https://forms.gle/cySXhSezJeB1M3JH9" target="_blank" rel="noopener">Open the form</a>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>Pay the fees</h3>
+          <p>Payment details are sent to you after you submit the registration form.</p>
+          <p>Questions about payment? WhatsApp <a href="https://wa.me/60195727276" target="_blank" rel="noopener"><strong>019-572 7276</strong></a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="final">
+      <h2>Seats are limited and classes fill fast.</h2>
+      <p>Register today, and pass this page on to another parent who needs it.</p>
+      <div class="ctas">
+        <a class="btn btn-lime no-border" href="https://forms.gle/cySXhSezJeB1M3JH9" target="_blank" rel="noopener">Register now</a>
+        <a class="btn btn-light" href="https://wa.me/60195727276" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Chess For Kids · Perak, Malaysia</span>
+    <span>Klebang · Buntong · Uplink Ipoh Garden</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/60195727276" target="_blank" rel="noopener" aria-label="Chat with Chess For Kids on WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.6-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
+  WhatsApp
+</a>
+
+<script>
+  const benefits = [
+    'Better focus and attention','Stronger problem-solving skills','Strategic thinking',
+    'Sharper cognitive ability','Better decision-making','More creativity',
+    'Better planning and organisation','Higher self-confidence and self-esteem','More patience and perseverance'
+  ];
+  const tick = '<span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E1A0C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>';
+  document.getElementById('benefit-list').innerHTML =
+    benefits.map(b => `<div class="benefit">${tick}<span>${b}</span></div>`).join('');
+</script>
+</body>
+</html>
